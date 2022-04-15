@@ -1,14 +1,14 @@
-# python_intro.py
-"""Python Essentials: Introduction to Python.
-<Name>
-<Class>
-<Date>
+# python_numpy2.py
+"""Python Essentials: Introduction to Python, Lab 2
+Sarah Vesneske
+MTH 520 Gibson
+April 15, 2022
 """
 
 #Problem 1
-def isolate(a, b, c, d, e):
+def isolate(L):
+   return min(L), max(L), (sum(L)/len(L))
 
-    raise NotImplementedError("Problem 1 Incomplete")
 
 #Problem 2
 def first_half(string):
@@ -75,4 +75,6 @@ def prob8():
     """
     raise NotImplementedError("Problem 8 Incomplete")
 
+if __name__ == "__main__":
+    print(isolate(list(range(1,10))))
 

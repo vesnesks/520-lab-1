@@ -41,8 +41,6 @@ def tax_liability(income):
 def prob6a():
     A = list(range(1,8))
     B = [5]*7
-    print A
-    print B
     P = [0]*7
     S = [0]*7
     F = [0]*7
