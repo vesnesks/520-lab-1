@@ -38,6 +38,26 @@ def tax_liability(income):
     else:
         return (income - 40125) * 0.22 + (40125-9875) * 0.12 + 9875*0.1
 
+def prob6a():
+    A = list(range(1,8))
+    B = [5]*7
+    print A
+    print B
+    P = [0]*7
+    S = [0]*7
+    F = [0]*7
+    for i in range(7):
+        P[i]=A[i]*B[i]
+        S[i]=A[i]+B[i]
+        F[i]=5*A[i]
+    return P,S,F
+
+def prob6b():
+    A = np.array([1,2,3,4,5,6,7])
+    B = np.array([5,5,5,5,5,5,5])
+    return A*B, A+B, 5*A 
+ 
+
 
 if __name__ == '__main__':
     print("This is printed if the module is run as a script")
@@ -45,3 +65,6 @@ if __name__ == '__main__':
     print(prob4())
     print(calories("banana"))
     print(tax_liability(63000))
+    print(prob6a())
+    print(prob6b())
+
